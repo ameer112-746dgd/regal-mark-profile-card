@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10%;
+            width: 120%;
+            height: 54%;
+            background: linear-gradient(135deg, #d4af37 50%, #1c1c1c 50%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .profile-img {
+            width: 170px;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            display: block;
+            margin: 1rem auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d4af37;
+            margin: 1rem 0 0.5rem;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+        }
+
+        .tagline {
+            color: #b3b3b3;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+        }
+
+        .contact-info {
+            z-index: 1;
+            position: relative;
+            margin-top: 6rem;
+        }
+
+        .contact-info p {
+            position: relative;
+            color: #d4af37;
+            margin: 0.5rem 0;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+
+        .contact-info p i {
+            position: absolute;
+            left: 0;
+            font-size: 1rem;
+            width: 20px;
+        }
+
+        .contact-info p span {
+            margin-left: 30px;
+            display: block;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 5rem;
+            z-index: 1;
+            position: relative;
+        }
+
+        .social-icons a {
+            color: gold;
+            font-size: 1.25rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile-img" src="images/Regal-logo.jpg" alt="Profile Image">
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> <span>+447960983074</span></p>
+            <p><i class="fas fa-envelope"></i> <span>regalmark.info@gmail.com</span></p>
+            <p><i class="fas fa-globe"></i> <span>regal-mark.com</span></p>
+            <p><i class="fas fa-map-marker-alt"></i> <span>London</span></p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/regalmark_official?igsh=MXBqMTlseWUyZ2Y4Nw==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/+447960983074" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@regalmarkofficial?_t=8oyO3kaiwLd&_r=1" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
